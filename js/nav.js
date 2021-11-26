@@ -5,11 +5,11 @@ esDesktop = () => window.innerWidth <= 1024;
 
 
 if(!esDesktop()){
-    nav.classList.toggle('activo');
+    nav.classList.add('activo');
 }
 
 
-btnNav.addEventListener("click", (e) => {
+btnNav.addEventListener("onClick", (e) => {
     e.preventDefault();
     if(esDesktop()){
         nav.classList.toggle('activo');

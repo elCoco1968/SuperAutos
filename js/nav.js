@@ -1,22 +1,18 @@
-const btnNav =document.getElementById('header__buttonNav');
+const btnNav = document.getElementById('header__buttonNav');
 const nav = document.getElementById('container-nav');
 esDesktop = () => window.innerWidth <= 1024;
 
 
 
-if(!esDesktop()){
+if (!esDesktop()) {
     nav.classList.toggle('activo');
 }
 
-
 btnNav.addEventListener("click", (e) => {
     e.preventDefault();
-    if(esDesktop()){
-        nav.classList.toggle('activo');
-        subMenu.classList.remove('activo'); 
+    nav.classList.toggle('activo');
+    subMenu.classList.remove('activo');
 
-    };
-    
 });
 
 const btnSub = document.getElementById('nav__link-submenu');
@@ -25,15 +21,9 @@ const btnRegresar = document.getElementById('nav__buttonRegresar')
 
 btnSub.addEventListener("click", (e) => {
     e.preventDefault();
-    if(esDesktop()){
         subMenu.classList.add('activo');
-    };
-    
 });
 
-btnRegresar.addEventListener("click", (e) =>{
-    if(esDesktop()){
+btnRegresar.addEventListener("click", (e) => {
         subMenu.classList.remove('activo');
-    }
-    
 });

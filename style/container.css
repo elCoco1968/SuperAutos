@@ -10,11 +10,14 @@
     
 }
 .container__img{
+    background-image: url('/imagenes/Banner/banner1.jpg');
     width: 100%;
+    height: 100vh;
     object-fit: cover;
-    
+
 }
-.quienes__img{
+
+/* .quienes__img{
     width: 100%;
     object-fit: cover;
     height: 300px;
@@ -36,4 +39,4 @@
     object-fit: cover;
     height: 300px;
     
-}
+} */

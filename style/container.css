@@ -1,0 +1,39 @@
+.container-body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background: var(--color__container);
+}
+.banner,.quienes,.ubicacion,.registro{
+    width: 100%;
+    
+}
+.container__img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.quienes__img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+.ubicacion__img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+   
+}
+.registro__img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+   
+}
+.banner__img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    
+}

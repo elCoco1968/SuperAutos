@@ -9,13 +9,13 @@ if(!esDesktop()){
 }
 
 
-btnNav.addEventListener("onClick", (e) => {
+btnNav.addEventListener("click", (e) => {
     e.preventDefault();
-    if(esDesktop()){
+    
         nav.classList.toggle('activo');
         subMenu.classList.remove('activo'); 
 
-    };
+    
     
 });
 
@@ -25,15 +25,15 @@ const btnRegresar = document.getElementById('nav__buttonRegresar')
 
 btnSub.addEventListener("click", (e) => {
     e.preventDefault();
-    if(esDesktop()){
+   
         subMenu.classList.add('activo');
-    };
+
     
 });
 
 btnRegresar.addEventListener("click", (e) =>{
-    if(esDesktop()){
+  
         subMenu.classList.remove('activo');
-    }
+
     
 });
